@@ -1,0 +1,5 @@
+allowBuilds:
+  '@parcel/watcher': false
+  '@pnpm/exe': set this to true or false
+  '@swc/core': false
+  sharp: set this to true or false

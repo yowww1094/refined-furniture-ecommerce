@@ -1,0 +1,99 @@
+# Task Tracker — Premium Moroccan Furniture Platform
+
+- [x] P1.1 Initialize Next.js 15 + TypeScript strict + Tailwind + ESLint
+- [x] P1.2 Configure tsconfig.json — strict + noUncheckedIndexedAccess + paths
+- [x] P1.3 Install + init shadcn/ui with brand color tokens
+- [x] P1.4 Install runtime deps (framer-motion, zustand, zod, RHF, next-intl, …)
+- [x] P1.5 Configure next.config.ts (image domains, typed routes, i18n)
+- [x] P1.6 Configure tailwind.config.ts + globals.css (brand tokens + fonts)
+- [x] P1.7 Create folder structure + .env.example + README + .gitignore
+- [x] P1.8 Extract design tokens (colors, typography, spacing, shadows) from Figma
+- [x] P1.9 Generate reusable UI‑variant classes (button, input, badge, etc.)
+- [x] P1.10 Set up icon mapping (Lucide) to match Figma icons
+- [x] P2.1 Create Supabase project + capture keys → .env.local
+- [x] P2.2 SQL migration 0001 — profiles + addresses + role enum + auth trigger
+- [x] P2.3 SQL migration 0002 — catalog tables (categories, products, materials, suppliers)
+- [x] P2.4 SQL migration 0003 — commerce + projects (orders, custom_requests, projects)
+- [x] P2.5 SQL mutation 0004 — ops + content (inventory, faqs, notifications, settings, events)
+- [x] P2.6 RLS policies + RLS policies + storage buckets (product-images, project-images, request-files, avatars)
+- [x] P2.7 Seed scripts (categories, products, projects, materials, FAQs, admin)
+- [x] P2.8 Generate DB types + lib/supabase clients (server, browser, middleware, admin)
+- [x] P3.1 Auth pages (sign-in / sign-up / forgot-password)
+- [x] P3.2 Auth form components + zod validation schemas
+- [x] P3.3 Middleware — locale + auth refresh + (account)/(admin) gate
+- [x] P3.4 Server actions for sign-in / sign-up / sign-out
+- [x] P3.5 SessionProvider + role-based redirect helper
+- [x] P4.1 Root layout + (public) layout (Navbar/Floater/Footer)
+- [x] P4.2 Navbar + Footer + LocaleSwitcher components
+- [x] P4.3 WhatsApp helper + WhatsAppButton + WhatsAppFloater
+- [x] P4.4 Home page (/) — hero + featured products + projects + testimonials
+- [x] P4.5 About + Contact pages (contact form → notifications)
+- [x] P4.6 FAQ page + Search page
+- [x] P4.7 404 + 500 styled error pages
+- [x] P4.8 Add layout‑specific sections (Hero, Features, CTA) to the home page
+- [ ] P5.1 ProductCard + ProductGallery shared components
+- [ ] P5.2 FilterBar + SortSelect (URL searchParams state)
+- [ ] P5.3 /shop listing — filters + sort + pagination
+- [ ] P5.4 /shop/category/[slug] page
+- [ ] P5.5 /product/[slug] — gallery + specs + dimensions + materials
+- [ ] P5.6 Product CTAs (add-to-cart / buy-now / wishlist / WhatsApp / Customize)
+- [ ] P5.7 Related products + reviews placeholder
+- [ ] P5.8 /wishlist page + wishlist toggle wiring
+- [ ] P5.9 Build ProductCard & ProductGallery from Figma specs
+- [ ] P6.1 Zustand cart store with localStorage persistence
+- [ ] P6.2 CartDrawer + CartItemRow + CartSummary components
+- [ ] P6.3 /cart full-page view
+- [ ] P6.4 Add-to-cart triggers drawer auto-open
+- [ ] P7.1 Checkout zod schema + form component
+- [ ] P7.2 /checkout page with COD notice + order summary
+- [ ] P7.3 Server action createOrder — atomic inventory decrement
+- [ ] P7.4 /order-confirmation page with order summary + WhatsApp
+- [ ] P7.5 Order email + WhatsApp template on confirmation
+- [ ] P8.1 /custom-furniture marketing page
+- [ ] P8.2 Custom request zod schema + form scaffold
+- [ ] P8.3 File picker — multi-image + attachments + client compression
+- [ ] P8.4 Material selector + dimension input + Pinterest references
+- [ ] P8.5 Server action submitCustomRequest + uploads to request-files bucket
+- [ ] P8.6 /account/custom-requests (list + detail + timeline)
+- [ ] P8.7 "Customize this design" deep-link seeding
+- [ ] P8.8 Implement Custom‑Request form exactly as designed
+- [ ] P9.1 (account) layout + sidebar nav + auth guard
+- [ ] P9.2 /account overview — recent orders/requests/wishlist
+- [ ] P9.3 /account/orders list + detail with timeline
+- [ ] P9.4 /account/profile + /account/addresses CRUD
+- [ ] P9.5 /account/notifications + bell with unread badge
+- [ ] P10.1 (admin) layout + admin guard + nav
+- [ ] P10.2 /admin dashboard — KPIs + revenue/orders charts + low-stock
+- [ ] P10.3 /admin/orders — table + status update drawer
+- [ ] P10.4 /admin/products — CRUD + image manager
+- [ ] P10.5 /admin/categories + materials + suppliers CRUD
+- [ ] P10.6 /admin/custom-requests — Kanban + status pills
+- [ ] P10.7 Custom-request detail + Send Quotation modal + notes
+- [ ] P10.8 /admin/customers + /admin/projects + /admin/content
+- [ ] P10.9 /admin/settings — WhatsApp number, default locale, contact
+- [ ] P10.10 /admin/notifications — compose + send
+- [ ] P10.11 Craft Admin‑Dashboard cards & charts to match Figma
+- [ ] P11.1 /admin/inventory overview + per-product stock
+- [ ] P11.2 Inventory movements ledger + audit history
+- [ ] P11.3 Low-stock threshold + alerts to admins
+- [ ] P11.4 Order completion auto-decrement + transaction safety
+- [ ] P12.1 /admin/analytics overview + date range picker
+- [ ] P12.2 Recharts — revenue / by-city / top products
+- [ ] P12.3 Custom-request funnel + material usage
+- [ ] P12.4 logEvent helper + capture pipeline
+- [ ] P13.1 next-intl install + config + locale middleware
+- [ ] P13.2 Message catalogs en/fr/ar + extract all hardcoded strings
+- [ ] P13.3 Arabic font pairing — Manrope + Plex Sans Arabic / Noto Sans Arabic
+- [ ] P13.4 Tailwind logical-property audit + RTL utilities
+- [ ] P13.5 Forms localized — labels, placeholders, errors
+- [ ] P13.6 Verify Arabic font pairing & RTL adjustments
+- [ ] P14.1 generateMetadata helpers applied to all public pages
+- [ ] P14.2 sitemap.ts — dynamic from products, projects, categories
+- [ ] P14.3 robots.ts
+- [ ] P14.4 JSON-LD — Product, BreadcrumbList, LocalBusiness, FAQ, Organization
+- [ ] P14.5 hreflang cluster + Core Web Vitals pass
+- [ ] P15.1 Vercel project setup + production env vars
+- [ ] P15.2 Supabase production migrations + storage setup
+- [ ] P15.3 Pre-deploy security audit (RLS, no leaked keys, MIME limits)
+- [ ] P15.4 CI (lint/typecheck/build) + Vercel Analytics + Supabase log review
+- [ ] P15.5 Production smoke test — full happy path

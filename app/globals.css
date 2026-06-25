@@ -1,0 +1,106 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+/*
+ * ==========================
+ *  Brand Design Tokens
+ * ==========================
+ *  Primary:   #6B4F3A  — Warm brown (signature)
+ *  Secondary: #E8DCCF  — Light warm cream
+ *  Background:#F8F6F3  — Off-white / parchment
+ *  Accent:    #C96F4A  — Terracotta
+ *  Text:      #1F1F1F  — Near-black
+ *  Success:   #68735B  — Sage green
+ */
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  /* ── Font ── */
+  --font-sans: 'Manrope', system-ui, sans-serif;
+
+  /* ── Brand colours (always static) ── */
+  --color-primary: #6B4F3A;
+  --color-primary-foreground: #FAFAF8;
+  --color-secondary: #E8DCCF;
+  --color-secondary-foreground: #3A3226;
+  --color-accent: #C96F4A;
+  --color-accent-foreground: #FAFAF8;
+  --color-success: #68735B;
+  --color-success-foreground: #FAFAF8;
+  --color-brand: var(--color-primary);
+
+  /* ── shadcn semantic tokens ── */
+  --color-background: var(--color-background-base);
+  --color-foreground: var(--color-foreground-base);
+  --color-card: var(--color-card-base);
+  --color-card-foreground: var(--color-foreground-base);
+  --color-popover: var(--color-popover-base);
+  --color-popover-foreground: var(--color-foreground-base);
+  --color-muted: var(--color-muted-base);
+  --color-muted-foreground: var(--color-muted-foreground-base);
+  --color-border: var(--color-border-base);
+  --color-input: var(--color-border-base);
+  --color-ring: var(--color-primary);
+  --color-destructive: #DC2626;
+  --color-destructive-foreground: #FAFAFA;
+  --color-sidebar: var(--color-sidebar-base);
+  --color-sidebar-foreground: var(--color-foreground-base);
+  --color-sidebar-border: var(--color-border-base);
+
+  /* ── Chart palette (future analytics) ── */
+  --color-chart-1: var(--color-primary);
+  --color-chart-2: var(--color-accent);
+  --color-chart-3: var(--color-success);
+  --color-chart-4: #A8896E;
+  --color-chart-5: var(--color-secondary);
+}
+
+:root {
+  /* ── Base layer (light) ── */
+  --color-background-base: #F8F6F3;
+  --color-foreground-base: #1F1F1F;
+  --color-card-base: #FFFFFF;
+  --color-popover-base: #FFFFFF;
+  --color-muted-base: #E8DCCF;
+  --color-muted-foreground-base: #6B6B6B;
+  --color-border-base: #E8DCCF;
+  --color-sidebar-base: #FFFFFF;
+
+  /* ── Radius ── */
+  --radius-lg: 0.75rem;
+  --radius-md: calc(var(--radius-lg) - 2px);
+  --radius-sm: calc(var(--radius-lg) - 4px);
+  --radius-xl: calc(var(--radius-lg) + 4px);
+  --radius-2xl: calc(var(--radius-lg) + 8px);
+  --radius-3xl: calc(var(--radius-lg) + 12px);
+  --radius-full: 9999px;
+}
+
+.dark {
+  --color-background-base: #1A1816;
+  --color-foreground-base: #F8F6F3;
+  --color-card-base: #242220;
+  --color-popover-base: #242220;
+  --color-muted-base: #3A3632;
+  --color-muted-foreground-base: #A09A94;
+  --color-border-base: #3A3632;
+  --color-sidebar-base: #242220;
+}
+
+/*
+ * ==========================
+ *  Base Styles
+ * ==========================
+ */
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+}
