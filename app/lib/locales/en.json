@@ -1,0 +1,317 @@
+export default {
+  // Navigation
+  navigate: {
+    home: "Home",
+    shop: "Shop",
+    about: "About",
+    contact: "Contact",
+    blog: "Blog",
+    account: "Account",
+    cart: "Cart",
+    wishlist: "Wishlist",
+    login: "Login",
+    register: "Register",
+    logout: "Logout",
+    admin: "Admin",
+    customFurniture: "Custom Furniture",
+    themeToggle: "Toggle theme",
+    viewCart": "View cart",
+    openMenu: "Open menu",
+    closeMenu: "Close menu"
+  },
+
+  // Hero section
+  hero: {
+    title: "Handcrafted Moroccan Furniture",
+    subtitle: "Experience the timeless beauty of authentic Moroccan craftsmanship",
+    shopNow: "Shop Now",
+    explore: "Explore Our Collection"
+  },
+
+  // Product details
+  product: {
+    availability: "Availability",
+    inStock: "In Stock",
+    outOfStock: "Out of Stock",
+    quantity: "Quantity",
+    addToCart: "Add to Cart",
+    buyNow: "Buy Now",
+    wishlist: "Add to Wishlist",
+    compare: "Compare",
+    share: "Share",
+    description: "Description",
+    specifications: "Specifications",
+    materials: "Materials",
+    reviews: "Reviews",
+    relatedProducts: "You Might Also Like",
+    shipping: "Shipping & Returns",
+    dimensions: "Dimensions",
+    weight: "Weight",
+    careInstructions: "Care Instructions"
+  },
+
+  // Cart
+  cart: {
+    title: "Your Shopping Cart",
+    empty: "Your cart is empty",
+    subtotal: "Subtotal",
+    shipping: "Shipping",
+    estimatedTotal: "Estimated Total",
+    proceedToCheckout: "Proceed to Checkout",
+    continueShopping: "Continue Shopping",
+    removeItem: "Remove",
+    updateQuantity: "Update Quantity",
+    applyCoupon: "Apply Coupon",
+    giftCard: "Gift Card"
+  },
+
+  // Checkout
+  checkout: {
+    title: "Checkout",
+    shippingAddress: "Shipping Address",
+    billingAddress: "Billing Address",
+    paymentMethod: "Payment Method",
+    orderSummary: "Order Summary",
+    placeOrder: "Place Order",
+    codNotice: "Cash on Delivery Available",
+    codDescription: "Pay cash when your order is delivered",
+    success: "Order placed successfully!"
+  },
+
+  // Account
+  account: {
+    title: "My Account",
+    profile: "Profile",
+    orders: "My Orders",
+    addresses: "Addresses",
+    wishlist: "Wishlist",
+    notifications: "Notifications",
+    logout: "Logout"
+  },
+
+  // Profile
+  profile: {
+    title: "Profile Information",
+    firstName: "First Name",
+    lastName: "Last Name",
+    email: "Email",
+    phone: "Phone Number",
+    saveChanges: "Save Changes"
+  },
+
+  // Addresses
+  addresses: {
+    title: "Manage Addresses",
+    addNew: "Add New Address",
+    edit: "Edit",
+    delete: "Delete",
+    setDefault: "Set as Default",
+    streetAddress: "Street Address",
+    apartment: "Apartment, Suite, etc.",
+    city: "City",
+    state: "State/Province",
+    postalCode: "Postal Code",
+    country: "Country",
+    defaultAddress: "Default Address",
+    noAddresses: "You haven't added any addresses yet.",
+    addFirstAddress: "Add Your First Address"
+  },
+
+  // Orders
+  orders: {
+    title: "My Orders",
+    orderNumber: "Order #",
+    date: "Date",
+    status: "Status",
+    total: "Total",
+    viewDetails": "View Details",
+    statuses: {
+      pending: "Pending",
+      processing: "Processing",
+      shipped: "Shipped",
+      delivered: "Delivered",
+      cancelled: "Cancelled"
+    }
+  },
+
+  // Custom Furniture
+  customFurniture: {
+    title: "Custom Furniture Request",
+    subtitle: "Bring your unique vision to life with our custom furniture service",
+    description: "Our expert craftsmen will work with you to create a one-of-a-kind piece that perfectly fits your space and style",
+    getStarted: "Get Started",
+    steps: {
+      step1: {
+        title: "Describe Your Vision",
+        description: "Tell us about the piece you have in mind, including inspiration images, dimensions, and materials"
+      },
+      step2: {
+        title: "Get a Quote",
+        description: "Our team will review your request and provide a detailed quotation"
+      },
+      step3: {
+        title: "Approval & Deposit",
+        description: "Review and approve the design, then provide a deposit to begin production"
+      },
+      step4: {
+        title: "Craftsmanship",
+        description: "Our artisans will handcraft your piece with meticulous attention to detail"
+      },
+      step5: {
+        title: "Delivery & Installation",
+        description: "We'll deliver and install your custom furniture at your location"
+      }
+    },
+    form: {
+      title: "Custom Request Form",
+      furnitureType: "Furniture Type",
+      dimensions: "Dimensions (L x W x H)",
+      materials: "Preferred Materials",
+      budget: "Budget Range",
+      description: "Detailed Description",
+      inspiration: "Inspiration Images",
+      attachments: "Additional Files",
+      pinterest: "Pinterest Board Link",
+      submitRequest: "Submit Request",
+      requesting: "Submitting..."
+    }
+  },
+
+  // Footer
+  footer: {
+    quickLinks: "Quick Links",
+    company: "Company",
+    ourStory: "Our Story",
+    sustainability: "Sustainability",
+    news: "News & Blog",
+    contactUs: "Contact Us",
+    whatsapp: "WhatsApp",
+    rightsReserved: "All rights reserved."
+  },
+
+  // Form validation messages
+  validation: {
+    required: "This field is required",
+    email: "Invalid email address",
+    minLength: "Must be at least {{min}} characters",
+    maxLength: "Must be no more than {{max}} characters",
+    minValue: "Must be at least {{min}}",
+    maxValue: "Must be no more than {{max}}",
+    invalidFormat: "Invalid format",
+    passwordsMatch: "Passwords must match"
+  },
+
+  // Form actions
+  formActions: {
+    submit: "Submit",
+    sending: "Sending...",
+    submitting: "Submitting...",
+    placingOrder: "Placing Order...",
+    placeOrder: "Place Order",
+    saveChanges: "Save Changes",
+    addNew: "Add New",
+    edit: "Edit",
+    delete: "Delete",
+    search: "Search",
+    reset: "Reset",
+    cancel: "Cancel",
+    viewDetails: "View Details"
+  },
+
+  // Form fields
+  fields: {
+    // Personal info
+    firstName: "First Name",
+    lastName: "Last Name",
+    fullName: "Full Name",
+    email: "Email Address",
+    phone: "Phone Number",
+    address: "Address",
+    address2: "Apartment, Suite, etc.",
+    city: "City",
+    state: "State/Province",
+    postalCode: "Postal Code",
+    country: "Country",
+
+    // Login/auth
+    password: "Password",
+    confirmPassword: "Confirm Password",
+
+    // Checkout
+    shippingAddress: "Shipping Address",
+    billingAddress: "Billing Address",
+    paymentMethod: "Payment Method",
+    orderSummary: "Order Summary",
+
+    // Custom furniture
+    furnitureType: "Furniture Type",
+    dimensions: "Dimensions (L x W x H)",
+    materials: "Preferred Materials",
+    budget: "Budget Range",
+    description: "Description",
+    inspiration: "Inspiration Images",
+    attachments: "Additional Files",
+    pinterest: "Pinterest Board Link",
+
+    // Common placeholders
+    placeholders: {
+      enterFirstName: "Enter your first name",
+      enterLastName: "Enter your last name",
+      enterFullName: "Enter your full name",
+      enterEmail: "Enter your email",
+      enterPhone: "Enter your phone number",
+      enterAddress: "Enter your address",
+      enterCity: "Enter your city",
+      enterState: "Enter your state/province",
+      enterPostalCode: "Enter your postal code",
+      enterPassword: "Enter your password",
+      enterConfirmPassword: "Confirm your password",
+      enterAddressLine1: "Address line 1",
+      enterAddressLine2: "Address line 2 (optional)",
+      enterCity: "Enter your city",
+      enterState: "Enter your state/province",
+      enterPostalCode: "Enter your postal code"
+    }
+  }
+  }
+
+  // Contact Form
+  contactForm: {
+    title: "Contact Us",
+    description: "Get in touch with us for any inquiries or support",
+    formTitle: "Contact Form",
+    name: "Full Name",
+    email: "Email Address",
+    subject: "Subject",
+    message: "Message",
+    submitButton: "Send Message",
+    sending: "Sending...",
+    success: "Message sent!",
+    error: "Failed to send message",
+    placeholders: {
+      name: "Enter your full name",
+      email: "Enter your email address",
+      subject: "Enter a subject",
+      message: "Enter your message"
+    }
+  }
+}
+
+// Auth
+auth: {
+  signIn: "Sign In",
+  signUp: "Sign Up",
+  welcomeBack: "Welcome back to Refined Furniture. Please sign in to continue.",
+  noAccount: "Don't have an account?",
+  forgotPassword: "Forgot your password?",
+  resetPassword: "Reset it here",
+  forgotPasswordTitle: "Forgot Password",
+  forgotPasswordDescription: "Enter your email address to receive a link to reset your password.",
+  sendResetLink: "Send Reset Link",
+  rememberPassword: "Remember your password?",
+  dontHaveAccount: "Don't have an account?",
+  alreadyHaveAccount: "Already have an account?",
+  unexpectedError: "An unexpected error occurred. Please try again.",
+  success: "Success",
+  error: "Error"
+},

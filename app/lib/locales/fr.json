@@ -1,0 +1,316 @@
+export default {
+  // Navigation
+  navigate: {
+    home: "Accueil",
+    shop: "Boutique",
+    about: "À propos",
+    contact: "Contact",
+    blog: "Blog",
+    account: "Compte",
+    cart: "Panier",
+    wishlist: "Liste d'envies",
+    login: "Connexion",
+    register: "Inscription",
+    logout: "Déconnexion",
+    admin: "Administration",
+    customFurniture: "Meubles sur mesure",
+    themeToggle: "Changer le thème",
+    viewCart: "Voir le panier",
+    openMenu: "Ouvrir le menu",
+    closeMenu: "Fermer le menu"
+  },
+
+  // Hero section
+  hero: {
+    title: "Meubles Marocains Faits Main",
+    subtitle: "Découvrez la beauté intemporelle de l'artisanat marocain authentique",
+    shopNow: "Acheter Maintenant",
+    explore: "Explorer Notre Collection"
+  },
+
+  // Product details
+  product: {
+    availability: "Disponibilité",
+    inStock: "En Stock",
+    outOfStock: "Épuisé",
+    quantity: "Quantité",
+    addToCart: "Ajouter au panier",
+    buyNow: "Acheter Maintenant",
+    wishlist: "Ajouter à la liste d'envies",
+    compare: "Comparer",
+    share: "Partager",
+    description: "Description",
+    specifications: "Spécifications",
+    materials: "Matériaux",
+    reviews: "Avis",
+    relatedProducts: "Vous pourriez aussi aimer",
+    shipping: "Livraison & Retours",
+    dimensions: "Dimensions",
+    weight: "Poids",
+    careInstructions: "Consignes d'entretien"
+  },
+
+  // Cart
+  cart: {
+    title: "Votre Panier",
+    empty: "Votre panier est vide",
+    subtotal: "Sous-total",
+    shipping: "Livraison",
+    estimatedTotal: "Total estimé",
+    proceedToCheckout: "Passer à la caisse",
+    continueShopping: "Continuer les achats",
+    removeItem: "Supprimer",
+    updateQuantity: "Mettre à jour la quantité",
+    applyCoupon: "Appliquer un coupon",
+    giftCard: "Carte cadeau"
+  },
+
+  // Checkout
+  checkout: {
+    title: "Paiement",
+    shippingAddress: "Adresse de livraison",
+    billingAddress: "Adresse de facturation",
+    paymentMethod: "Méthode de paiement",
+    orderSummary: "Récapitulatif de la commande",
+    placeOrder: "Passer la commande",
+    codNotice: "Paiement à la livraison disponible",
+    codDescription: "Payez en espèces lors de la livraison de votre commande",
+    success: "Commande passée avec succès !"
+  },
+
+  // Account
+  account: {
+    title: "Mon Compte",
+    profile: "Profil",
+    orders: "Mes Commandes",
+    addresses: "Adresses",
+    wishlist: "Liste d'envies",
+    notifications: "Notifications",
+    logout: "Déconnexion"
+  },
+
+  // Profile
+  profile: {
+    title: "Informations de profil",
+    firstName: "Prénom",
+    lastName: "Nom de famille": "Nom de famille",
+    email: "Email",
+    phone: "Numéro de téléphone",
+    saveChanges: "Enregistrer les modifications"
+  },
+
+  // Addresses
+  addresses: {
+    title: "Gérer les adresses",
+    addNew: "Ajouter une nouvelle adresse",
+    edit: "Modifier",
+    delete: "Supprimer",
+    setDefault: "Définir comme adresse par défaut",
+    streetAddress: "Adresse",
+    apartment: "Appartement, Suite, etc.",
+    city: "Ville",
+    state: "État/Province",
+    postalCode: "Code postal",
+    country: "Pays",
+    defaultAddress: "Adresse par défaut",
+    noAddresses: "Vous n'avez ajouté aucune adresse.",
+    addFirstAddress: "Ajouter votre première adresse"
+  },
+
+  // Orders
+  orders: {
+    title: "Mes commandes",
+    orderNumber: "Commande #",
+    date: "Date",
+    status: "Statut",
+    total: "Total",
+    viewDetails: "Voir les détails",
+    statuses: {
+      pending: "En attente",
+      processing: "En cours de traitement",
+      shipped: "Expédié",
+      delivered: "Livré",
+      cancelled: "Annulé"
+    }
+  },
+
+  // Custom Furniture
+  customFurniture: {
+    title: "Demande de meubles sur mesure",
+    subtitle: "Donnez vie à votre vision unique avec notre service de meubles personnalizados",
+    description: "Nos artisans experts travailleront avec vous pour créer une pièce unique qui s'adapte parfaitement à votre espace et à votre style",
+    getStarted: "Commencer",
+    steps: {
+      step1: {
+        title: "Décrire votre vision",
+        description: "Parlez-nous de la pièce que vous avez en tête, y compris les images d'inspiration, les dimensions et les matériaux"
+      },
+      step2: {
+        title: "Obtenir un devis",
+        description: "Notre équipe examinera votre demande et vous fournira un devis détaillé"
+      },
+      step3: {
+        title: "Approbation & Dépôt",
+        description: "Revoyez et approuvez le design, puis fournissez un acompte pour commencer la production"
+      },
+      step4: {
+        title: "Artisanat",
+        description: "Nos artisans fabriqueront à la main votre pièce avec une attention méticuleuse aux détails"
+      },
+      step5: {
+        title: "Livraison & Installation",
+        description: "Nous livrerons et installerons vos meubles personnalisés à votre emplacement"
+      }
+    },
+    form: {
+      title: "Formulaire de demande personnalisée",
+      furnitureType: "Type de meuble",
+      dimensions: "Dimensions (L x l x H)",
+      materials: "Matériaux préférés",
+      budget: "Fourchette de budget",
+      description: "Description détaillée",
+      inspiration: "Images d'inspiration",
+      attachments: "Fichiers supplémentaires",
+      pinterest: "Lien vers le tableau Pinterest",
+      submitRequest: "Soumettre la demande",
+      requesting: "Envoi en cours..."
+    }
+  },
+
+  // Footer
+  footer: {
+    quickLinks: "Liens rapides",
+    company: "Entreprise",
+    ourStory: "Notre histoire",
+    sustainability: "Développement durable",
+    news: "Nouvelles & Blog",
+    contactUs: "Contactez-nous",
+    whatsapp: "WhatsApp",
+    rightsReserved: "Tous droits réservés."
+  },
+
+  // Form validation messages
+  validation: {
+    required: "Ce champ est obligatoire",
+    email: "Adresse e-mail invalide",
+    minLength: "Doit contenir au moins {{min}} caractères",
+    maxLength: "Ne doit pas dépasser {{max}} caractères",
+    minValue: "Doit être supérieur ou égal à {{min}}",
+    maxValue: "Doit être inférieur ou égal à {{max}}",
+    invalidFormat: "Format invalide",
+    passwordsMatch: "Les mots de passe doivent correspondre"
+  },
+
+  // Form actions
+  formActions: {
+    submit: "Soumettre",
+    sending: "Envoi en cours...",
+    submitting: "Soumission en cours...",
+    placingOrder: "Passation de la commande...",
+    placeOrder: "Passer la commande",
+    saveChanges: "Enregistrer les modifications",
+    addNew: "Ajouter un nouveau",
+    edit: "Modifier",
+    delete: "Supprimer",
+    search: "Rechercher",
+    reset: "Réinitialiser",
+    cancel: "Annuler",
+    viewDetails: "Voir les détails"
+  },
+
+  // Form fields
+  fields: {
+    // Personal info
+    firstName: "Prénom",
+    lastName: "Nom de famille",
+    fullName: "Nom complet",
+    email: "Adresse e-mail",
+    phone: "Numéro de téléphone",
+    address: "Adresse",
+    address2: "Appartement, Suite, etc.",
+    city: "Ville",
+    state: "État/Province",
+    postalCode: "Code postal",
+    country: "Pays",
+
+    // Login/auth
+    password: "Mot de passe",
+    confirmPassword: "Confirmez le mot de passe",
+
+    // Checkout
+    shippingAddress: "Adresse de livraison",
+    billingAddress: "Adresse de facturation",
+    paymentMethod: "Méthode de paiement",
+    orderSummary: "Récapitulatif de la commande",
+
+    // Custom furniture
+    furnitureType: "Type de meuble",
+    dimensions: "Dimensions (L x l x H)",
+    materials: "Matériaux préférés",
+    budget: "Budget",
+    description: "Description",
+    inspiration: "Images d'inspiration",
+    attachments: "Fichiers supplémentaires",
+    pinterest: "Lien du tableau Pinterest",
+
+    // Common placeholders
+    placeholders: {
+      enterFirstName: "Entrez votre prénom",
+      enterLastName: "Entrez votre nom de famille",
+      enterFullName: "Entrez votre nom complet",
+      enterEmail: "Entrez votre adresse e-mail",
+      enterPhone: "Entrez votre numéro de téléphone",
+      enterAddress: "Entrez votre adresse",
+      enterCity: "Entrez votre ville",
+      enterState: "Entrez votre état/province",
+      enterPostalCode: "Entrez votre code postal",
+      enterPassword: "Entrez votre mot de passe",
+      enterConfirmPassword: "Confirmez votre mot de passe",
+      enterAddressLine1: "Ligne d'adresse 1",
+      enterAddressLine2: "Ligne d'adresse 2 (optionnel)",
+      enterCity: "Entrez votre ville",
+      enterState: "Entrez votre état/province",
+      enterPostalCode: "Entrez votre code postal"
+    }
+  }
+}
+
+// Contact Form
+contactForm: {
+  title: "Contactez-nous",
+  description: "Prenez contact avec nous pour toute question ou demande d'assistance",
+  formTitle: "Formulaire de contact",
+  name: "Nom complet",
+  email: "Adresse e-mail",
+  subject: "Objet",
+  message: "Message",
+  submitButton: "Envoyer le message",
+  sending: "Envoi en cours...",
+  success: "Message envoyé !",
+  error: "Échec de l'envoi du message",
+  placeholders: {
+    name: "Entrez votre nom complet",
+    email: "Entrez votre adresse e-mail",
+    subject: "Entrez un objet",
+    message: "Entrez votre message"
+  }
+}
+
+// Auth
+auth: {
+  signIn: "Se connecter",
+  signUp: "S'inscrire",
+  welcomeBack: "Bienvenue sur Refined Furniture. Veuillez vous connecter pour continuer.",
+  noAccount: "Vous n'avez pas de compte ?",
+  forgotPassword: "Mot de passe oublié ?",
+  resetPassword: "Réinitialiser le mot de passe",
+  forgotPasswordTitle: "Mot de passe oublié",
+  forgotPasswordDescription: "Entrez votre adresse e-mail pour recevoir un lien de réinitialisation de mot de passe.",
+  sendResetLink: "Envoyer le lien de réinitialisation",
+  rememberPassword: "Vous vous souvenez de votre mot de passe ?",
+  dontHaveAccount: "Vous n'avez pas de compte ?",
+  alreadyHaveAccount: "Vous avez déjà un compte ?",
+  unexpectedError: "Une erreur inattendue s'est produite. Veuillez réessayer.",
+  success: "Succès",
+  error: "Erreur"
+}

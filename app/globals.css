@@ -18,6 +18,7 @@
 @theme {
   /* ── Font ── */
   --font-sans: 'Manrope', system-ui, sans-serif;
+  --font-noto-arabic: 'Noto Sans Arabic', system-ui, sans-serif;
 
   /* ── Brand colours (always static) ── */
   --color-primary: #6B4F3A;
@@ -30,62 +31,9 @@
   --color-success-foreground: #FAFAF8;
   --color-brand: var(--color-primary);
 
-  /* ── shadcn semantic tokens ── */
-  --color-background: var(--color-background-base);
-  --color-foreground: var(--color-foreground-base);
-  --color-card: var(--color-card-base);
-  --color-card-foreground: var(--color-foreground-base);
-  --color-popover: var(--color-popover-base);
-  --color-popover-foreground: var(--color-foreground-base);
-  --color-muted: var(--color-muted-base);
-  --color-muted-foreground: var(--color-muted-foreground-base);
-  --color-border: var(--color-border-base);
-  --color-input: var(--color-border-base);
-  --color-ring: var(--color-primary);
-  --color-destructive: #DC2626;
-  --color-destructive-foreground: #FAFAFA;
-  --color-sidebar: var(--color-sidebar-base);
-  --color-sidebar-foreground: var(--color-foreground-base);
-  --color-sidebar-border: var(--color-border-base);
-
-  /* ── Chart palette (future analytics) ── */
-  --color-chart-1: var(--color-primary);
-  --color-chart-2: var(--color-accent);
-  --color-chart-3: var(--color-success);
-  --color-chart-4: #A8896E;
-  --color-chart-5: var(--color-secondary);
-}
-
-:root {
-  /* ── Base layer (light) ── */
-  --color-background-base: #F8F6F3;
-  --color-foreground-base: #1F1F1F;
-  --color-card-base: #FFFFFF;
-  --color-popover-base: #FFFFFF;
-  --color-muted-base: #E8DCCF;
-  --color-muted-foreground-base: #6B6B6B;
-  --color-border-base: #E8DCCF;
-  --color-sidebar-base: #FFFFFF;
-
-  /* ── Radius ── */
-  --radius-lg: 0.75rem;
-  --radius-md: calc(var(--radius-lg) - 2px);
-  --radius-sm: calc(var(--radius-lg) - 4px);
-  --radius-xl: calc(var(--radius-lg) + 4px);
-  --radius-2xl: calc(var(--radius-lg) + 8px);
-  --radius-3xl: calc(var(--radius-lg) + 12px);
-  --radius-full: 9999px;
-}
-
-.dark {
-  --color-background-base: #1A1816;
-  --color-foreground-base: #F8F6F3;
-  --color-card-base: #242220;
-  --color-popover-base: #242220;
-  --color-muted-base: #3A3632;
-  --color-muted-foreground-base: #A09A94;
-  --color-border-base: #3A3632;
-  --color-sidebar-base: #242220;
+  /* ── Typography ── */
+  --font-serif: 'Cormorant Garamond', ui-serif, Georgia;
+  --font-mono: 'IBM Plex Mono', ui-monospace, Menlo;
 }
 
 /*
@@ -102,5 +50,12 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: 'rlig' 1, 'calt' 1;
+    /* Use appropriate font based on language */
+    font-family: var(--font-sans);
+  }
+
+  /* Arabic text should use Noto Sans Arabic */
+  :where([lang="ar"]) {
+    font-family: var(--font-noto-arabic), var(--font-sans);
   }
 }

@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(pnpm *)",
-      "Bash(node extract-design-tokens.js)"
+      "Bash(node extract-design-tokens.js)",
+      "Bash(dir A:projectsFreelanceRefined *)"
     ]
   }
 }

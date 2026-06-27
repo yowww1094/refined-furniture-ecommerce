@@ -5,8 +5,10 @@ import { Label } from '@/components/ui/label';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { SubmitButton } from '@/components/auth/SubmitButton';
 import { FieldError } from '@/components/auth/FieldError';
+import { useTranslations } from '@/lib/i18n';
 
 export default function SignInPage() {
+  const { t } = useTranslations();
   const [formState, formAction] = useFormState(signInWithCredentials, {
     error: null
   });
@@ -16,27 +18,29 @@ export default function SignInPage() {
       <div className="w-full max-w-md space-y-8">
         <div>
           <h1 className="text-3xl font-bold text-center text-foreground">
-            Sign In
+            {t('auth.signIn')}
           </h1>
           <p className="text-center text-muted-foreground">
-            Welcome back to Refined Furniture. Please sign in to continue.
+            {t('auth.welcomeBack')}
           </p>
         </div>
 
         {formState.error && (
           <Alert variant="destructive" className="w-full">
-            <AlertTitle>Error</AlertTitle>
+            <AlertTitle>{t('auth.error')}</AlertTitle>
             <AlertDescription>{formState.error}</AlertDescription>
           </Alert>
         )}
 
         <form action={formAction} className="space-y-6">
           <div className="space-y-2">
-            <Label htmlFor="email">Email Address</Label>
+            <Label htmlFor="email">
+              {t('fields.email')}
+            </Label>
             <Input
               id="email"
               type="email"
-              placeholder="Enter your email"
+              placeholder={t('fields.placeholders.enterEmail')}
               name="email"
               className={formState.error?.includes('email') ? 'border-destructive' : ''}
             />
@@ -46,11 +50,13 @@ export default function SignInPage() {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="password">Password</Label>
+            <Label htmlFor="password">
+              {t('fields.password')}
+            </Label>
             <Input
               id="password"
               type="password"
-              placeholder="Enter your password"
+              placeholder={t('fields.placeholders.enterPassword')}
               name="password"
               className={formState.error?.includes('password') ? 'border-destructive' : ''}
             />
@@ -60,20 +66,20 @@ export default function SignInPage() {
           </div>
 
           <SubmitButton>
-            Sign In
+            {t('formActions.submit')}
           </SubmitButton>
         </form>
 
         <div className="text-center text-sm">
-          Don't have an account?{' '}
+          {t('auth.noAccount')} {' '}
           <a href="/auth/sign-up" className="font-medium text-primary hover:underline">
-            Sign Up
+            {t('auth.signUp')}
           </a>
         </div>
         <div className="text-center text-sm">
-          Forgot your password?{' '}
+          {t('auth.forgotPassword')} {' '}
           <a href="/auth/forgot-password" className="font-medium text-primary hover:underline">
-            Reset it here
+            {t('auth.resetPassword')}
           </a>
         </div>
       </div>

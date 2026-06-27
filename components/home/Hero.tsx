@@ -27,8 +27,8 @@ export function Hero() {
 
         {/* Decorative elements */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute -top-10 left-1/2 -z-10 w-[10 w-20 h-20 bg-accent/10 rounded-full transform -translate-x-1/2 animate-pulse-slow"></div>
-          <div className="absolute bottom-0 right-1/2 -z-10 w-28 h-28 bg-accent/5 rounded-full transform translate-x-1/2 animate-pulse-slow delay-1000"></div>
+          <div className="absolute -top-10 left-1/2 -z-10 w-[10 w-20 h-20 bg-accent/10 rounded-full transform -translate-x-1/2 rtl:right-1/2 rtl:!left-auto animate-pulse-slow"></div>
+          <div className="absolute bottom-0 right-1/2 -z-10 w-28 h-28 bg-accent/5 rounded-full transform translate-x-1/2 rtl:left-1/2 rtl:!right-auto animate-pulse-slow delay-1000"></div>
         </div>
       </div>
     </section>

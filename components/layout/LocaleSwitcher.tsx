@@ -78,12 +78,12 @@ export function LocaleSwitcher() {
         {/* Language name */}
         <span className="whitespace-nowrap">{languageNames[currentLocale]}</span>
         {/* Dropdown indicator */}
-        <span className="ml-1 h-4 w-4">{isOpen ? '▲' : '▼'}</span>
+        <span className="ms-1 h-4 w-4">{isOpen ? '▲' : '▼'}</span>
       </button>
 
       {/* Dropdown menu */}
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-20">
+        <div className="absolute start-0 mt-2 w-56 origin-top-start rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-20">
           {locales.map((locale) => (
             <Link
               key={locale}
@@ -93,9 +93,9 @@ export function LocaleSwitcher() {
                 changeLocale(locale);
               }}
               className={`
-                block px-4 py-2 text-sm text-left ${locale === currentLocale
+                block px-4 py-2 text-sm text-start ${locale === currentLocale
                   ? 'bg-accent/20 text-accent'
-                  : 'text-gray-700 hover:bg-gray-100'}
+                  : 'text-gray-700 hover:bg-gray-100 rtl:text-right'}
                 w-full
               `}
             >

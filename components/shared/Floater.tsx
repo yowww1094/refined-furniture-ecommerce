@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function Floater() {
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-6 left-6 rtl:right-6 rtl:left-auto z-50">
       <Link
         href="https://wa.me/2125XXXXXXX"
         className="block w-12 h-12 rounded-full bg-accent flex items-center justify-center shadow-lg hover:bg-accent/90 transition-colors"

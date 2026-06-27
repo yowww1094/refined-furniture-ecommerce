@@ -1,0 +1,254 @@
+export default {
+  // Navigation
+  navigate: {
+    home: "الصفحة الرئيسية",
+    shop: "المتجر",
+    about: "من نحن",
+    contact: "اتصل بنا",
+    blog: "المدونة: "المدونة",
+    account: "الحساب",
+    cart: "العربة",
+    wishlist: "قائمة الأمنيات",
+    login: "تسجيل الدخول",
+    register: "التسجيل",
+    logout: "تسجيل الخروج",
+    admin: "الإدارة",
+    customFurniture: "الأثاث المخصص",
+    themeToggle: "تغيير السمة",
+    viewCart: "عرض السلة",
+    openMenu: "فتح القائمة",
+    closeMenu: "إغلاق القائمة"
+  },
+
+  // Hero section
+  hero: {
+    title: "الأثاث المغربي المصنوع يدويًا",
+    subtitle: "جرب جمال الحرفية المغربية الأصيلة الخالدة",
+    shopNow: "تسوق الآن",
+    explore: "استكشف مجموعتنا"
+  },
+
+  // Product details
+  product: {
+    availability: "التوافر",
+    inStock: "متوفر",
+    outOfStock: "غير متوفر",
+    quantity: "الكمية",
+    addToCart: "أضف إلى السلة",
+    buyNow: "اشتري الآن",
+    wishlist: "أضف إلى قائمة الأمنيات",
+    compare: "قارن",
+    share: "شارك",
+    description: "الوصف",
+    specifications: "المواصفات",
+    materials: "المواد",
+    reviews: "التعليقات",
+    relatedProducts: "قد يعجبك أيضًا",
+    shipping: "الشحن والإرجع",
+    dimensions: "الأبعاد",
+    weight: "الوزن",
+    careInstructions: "تعليمات العناية"
+  },
+
+  // Cart
+  cart: {
+    title: "عربة التسوق الخاصة بك",
+    empty: "عربة التسوق الخاصة بك فارغة",
+    subtotal: "المجموع الفرعي",
+    shipping: "الشحن",
+    estimatedTotal: "المجموع المتوقع",
+    proceedToCheckout: "المتابعة لإتمام الدفع",
+    continueShopping: "استمر في التسوق",
+    removeItem: "إزالة",
+    updateQuantity: "تحديث الكمية",
+    applyCoupon: "تطبيق كوبون",
+    giftCard: "بطاقة هدايا"
+  },
+
+  // Checkout
+  checkout: {
+    title: "إتمام الدفع",
+    shippingAddress: "عنوان الشحن",
+    billingAddress: "عنوان الفوترة",
+    paymentMethod: "طريقة الدفع",
+    orderSummary: "ملخص الطلب",
+    placeOrder: "وضع الطلب",
+    codNotice: "الدفع النقدي عند التسليم متاح",
+    codDescription: "ادفع نقدًا عند تسليم طلبك",
+    success: "تم وضع الطلب بنجاح !"
+  },
+
+  // Account
+  account: {
+    title: "حسابي",
+    profile: "الملف الشخصي",
+    orders: "طلباتي",
+    addresses: "العناوين",
+    wishlist: "قائمة الأمنيات",
+    notifications: "الإشعارات",
+    logout: "تسجيل الخروج"
+  },
+
+  // Profile
+  profile: {
+    title: "معلومات الملف الشخصي",
+    firstName: "الاسم الأول",
+    lastName: "اسم العائلة",
+    email: "البريد الإلكتروني",
+    phone: "رقم الهاتف",
+    saveChanges: "حفظ التغييرات"
+  },
+
+  // Addresses
+  addresses: {
+    title: "إدارة العناوين",
+    addNew: "إضافة عنوان جديد",
+    edit: "تعديل",
+    delete: "حذف",
+    setDefault: "تعيين كافتراضي",
+    streetAddress: "عنوان الشارع",
+    apartment: "شقة، جناح، إلخ",
+    city: "المدينة",
+    state: "المقاطعة/الولاية",
+    postalCode: "الرمز البريدي",
+    country: "البلد",
+    defaultAddress: "العنوان الافتراضي",
+    noAddresses: "لم تقم بإضافة أي عناوين بعد.",
+    addFirstAddress: "أضف عنوانك الأول"
+  },
+
+  // Orders
+  orders: {
+    title: "طلباتي",
+    orderNumber: "طلب #",
+    date: "التاريخ",
+    status: "الحالة",
+    total: "الإجمالي",
+    viewDetails: "عرض التفاصيل",
+    statuses: {
+      pending: "في الانتظار",
+      processing: "قيد المعالجة",
+      shipped: "تم الشحن",
+      delivered: "تم التسليم",
+      cancelled: "ملغي"
+    }
+  },
+
+  // Custom Furniture
+  customFurniture: {
+    title: "طلب أثاث مخصص",
+    subtitle: "حقق رؤيتك الفريدة مع خدمة الأثاث المخصص لدينا",
+    description: "سيعمل حرفيونا الخبراء معك لإنشاء قطعة فريدة تتناسب تمامًا مع مساحتك وأسلوبك",
+    getStarted: "ابدأ الآن",
+    steps: {
+      step1: {
+        title: "وصف رؤيتك",
+        description: "حدثنا عن القطعة التي تتخيلها، بما في ذلك صور الإلهام، والأبعاد، والمواد"
+      },
+      step2: {
+        title: "الحصول على عرض سعر",
+        description: "سيقوم فريقنا بمراجعة طلبك وتقديم عرض سعر مفصل"
+      },
+      step3: {
+        title: "الموافقة والاتفاق",
+        description: "راجع ووافق على التصميم، ثم قدم مقدمًا لبدء الإنتاج"
+      },
+      step4: {
+        title: "الحرفية",
+        description: "سيقوم حرفيونا بتصنيع قطعتك يدويًا بعناية فائقة بالتفاصيل"
+      },
+      step5: {
+        title: "التسليم والتركيب",
+        description: "سنقوم بتسليم وتركيب أثاثك المخصص في موقعك"
+      }
+    },
+    form: {
+      title: "نموذج الطلب المخصص",
+      furnitureType: "نوع الأثاث",
+      dimensions: "الأبعاد (الطول × العرض × الارتفاع)",
+      materials: "المواد المفضلة",
+      budget: "نطاق الميزانية",
+      description: "وصف مفصل",
+      inspiration: "صور الإلهام",
+      attachments: "ملفات إضافية",
+      pinterest: "رابط لوحة بينتريست",
+      submitRequest: "إرسال الطلب",
+      requesting: "جاري الإرسال..."
+    }
+  },
+
+  // Footer
+  footer: {
+    quickLinks: "روابط سريعة",
+    company: "الشركة",
+    ourStory: "قصتنا",
+    sustainability: "الاستدامة",
+    news: "الأخبار والمدونة",
+    contactUs: "اتصل بنا",
+    whatsapp: "WhatsApp",
+    rightsReserved: "جميع الحقوق محفوظة."
+  },
+
+  // Form validation messages
+  validation: {
+    required: "هذا الحقل مطلوب",
+    email: "عنوان بريد إلكتروني غير صالح",
+    minLength: "يجب أن يكون على الأقل {{min}} أحرف",
+    maxLength: "يجب ألا يتجاوز {{max}} أحرف",
+    minValue: "يجب أن يكون على الأقل {{min}}",
+    maxValue: "يجب ألا يتجاوز {{max}}",
+    invalidFormat: "تنسيق غير صالح",
+    passwordsMatch: "يجب أن تتطابق كلمة المرور"
+  },
+
+  // Form actions
+  formActions: {
+    submit: "إرسال",
+    sending: "جارٍ الإرسال...",
+    submitting: "جارٍ الإرسال...",
+    placingOrder: "جارٍ وضع الطلب...",
+    placeOrder: "ضع الطلب",
+    saveChanges: "احفظ التغييرات",
+    addNew: "أضف جديدًا",
+    edit: "عدل",
+    delete: "احذف",
+    search: "ابحث",
+    reset: "أعد التعيين",
+    cancel: "إلغاء",
+    viewDetails: "عرض التفاصيل"
+  },
+
+  // Form fields
+  fields: {
+    // Personal info
+    firstName: "الاسم الأول",
+    lastName: "اسم العائلة",
+    fullName: "الاسم الكامل",
+    email: "البريد الإلكتروني",
+    phone: "رقم الهاتف",
+    address: "العنوان",
+    address2: "الشقة، المكتب، إلخ",
+    city: "المدينة",
+    state: "المحافظة/الولاية",
+    postalCode: "الرمز البريدي",
+    country: "البلد"
+  }
+}
+
+// Auth
+auth: {
+  signIn: "تسجيل الدخول",
+  signUp: "التسجيل",
+  welcomeBack: "مرحبًا بك مرة أخرى في أثاث المغرب الرفيع. يرجى تسجيل الدخول للمتابعة.",
+  noAccount: "ليس لديك حساب؟",
+  forgotPassword: "نسيت كلمة المرور؟",
+  resetPassword: "إعادة تعيين كلمة المرور",
+  forgotPasswordTitle: "نسيت كلمة المرور",
+  forgotPasswordDescription: "أدخل بريدك الإلكتروني لاستلام رابط لإعادة تعيين كلمة المرور.",
+  sendResetLink: "إرسال رابط إعادة التعيين",
+  rememberPassword: "تذكر كلمة المرور؟",
+  dontHaveAccount: "ليس لديك حساب؟",
+  alreadyHaveAccount: "لديك حساب بالفعل؟",
+  success: "نجاح",
+  error: "خطأ"
+},

@@ -12,6 +12,7 @@ import { Label } from '@/components/ui/label';
 import { submitContactForm } from '@/lib/actions/contact';
 import { AlertTriangle } from 'lucide-react';
 import { CheckCircle } from 'lucide-react';
+import { useTranslations } from '@/lib/i18n';
 
 export function ContactForm() {
   const {
@@ -27,6 +28,7 @@ export function ContactForm() {
       message: '',
     },
   });
+  const { t } = useTranslations();
 
   const [{ message, error }, submit] = useFormState(submitContactForm, {
     initialState: { message: null, error: null },
@@ -40,56 +42,64 @@ export function ContactForm() {
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
-          <Label htmlFor="name">Full Name</Label>
+          <Label htmlFor="name">
+            {t('fields.firstName')} {t('fields.lastName')}
+          </Label>
           <Input
             id="name"
-            placeholder="Enter your full name"
+            placeholder={t('fields.placeholders.enterFullName')}
             {...register('name')}
             className={errors.name ? 'border-destructive' : ''}
           />
           {errors.name && (
-            <p className="mt-2 text-sm text-destructive">{errors.name.message}</p>
+            <p className="mt-2 text-sm text-destructive">{t('validation.required')}</p>
           )}
         </div>
         <div>
-          <Label htmlFor="email">Email Address</Label>
+          <Label htmlFor="email">
+            {t('fields.email')}
+          </Label>
           <Input
             id="email"
             type="email"
-            placeholder="Enter your email"
+            placeholder={t('fields.placeholders.enterEmail')}
             {...register('email')}
             className={errors.email ? 'border-destructive' : ''}
           />
           {errors.email && (
-            <p className="mt-2 text-sm text-destructive">{errors.email.message}</p>
+            <p className="mt-2 text-sm text-destructive">{t('validation.email')}</p>
           )}
         </div>
       </div>
 
       <div>
-        <Label htmlFor="subject">Subject</Label>
+        <Label htmlFor="subject">
+          {t('fields.subject')}
+        </Label>
         <Input
           id="subject"
-          placeholder="Brief summary of your inquiry"
+          placeholder={t('fields.placeholders.enterSubject')}
           {...register('subject')}
           className={errors.subject ? 'border-destructive' : ''}
         />
         {errors.subject && (
-          <p className="mt-2 text-sm text-destructive">{errors.subject.message}</p>
+          <p className="mt-2 text-sm text-destructive">{t('validation.required')}</p>
         )}
       </div>
 
       <div>
-        <Label htmlFor="message">Message</Label>
+        <Label htmlFor="message">
+          {t('fields.description')}
+        </Label>
         <Textarea
           id="message"
-          placeholder="How can we help you?"
+          placeholder={t('fields.placeholders.enterMessage')}
           {...register('message')}
           className={errors.message ? 'border-destructive' : ''}
           minRows={5}
         />
         {errors.message && (
-          <p className="mt-2 text-sm text-destructive">{errors.message.message}</p>
+          <p className="mt-2 text-sm text-destructive">{t('validation.required')}</p>
         )}
       </div>
 
@@ -98,14 +108,14 @@ export function ContactForm() {
         disabled={isSubmitting}
         className="w-full py-3"
       >
-        {isSubmitting ? 'Sending...' : 'Send Message'}
+        {isSubmitting ? t('formActions.submitting') : t('formActions.submit')}
       </Button>
 
       {error && (
         <div className="mt-4 flex items-start space-x-3 rounded-md border p-4 bg-destructive/50 text-destructive">
           <AlertTriangle className="h-5 w-5 flex-shrink-0 flex-shrink-0" />
           <div>
-            <h3 className="text-sm font-medium">Failed to send message</h3>
+            <h3 className="text-sm font-medium">{t('contactForm.error')}</h3>
             <p className="mt-1 text-sm">{error}</p>
           </div>
         </div>
@@ -113,11 +123,11 @@ export function ContactForm() {
 
       {message && (
         <div className="mt-4 flex items-start space-x-3 rounded-md border p-4 bg-success/50 text-success">
-          <CheckCircle className="h-5 w-5 flex-shrink-0 flex-shrink-0" />
+          <CheckCircle className="h-5 w-5 flex-shrink-0" />
           <div>
-            <h3 className="text-sm font-medium">Message sent!</h3>
+            <h3 className="text-sm font-medium">{t('contactForm.success')}</h3>
             <p className="mt-1 text-sm">
-              Thank you for contacting us. We'll get back to you soon.
+              {t('contactForm.messageSent')}
             </p>
           </div>
         </div>

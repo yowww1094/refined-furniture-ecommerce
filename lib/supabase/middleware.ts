@@ -31,10 +31,10 @@ export function createMiddlewareClient(
       // Set cookie in response headers
       let cookie = `${encodeURIComponent(name)}=${encodeURIComponent(value)}`
 
-      if options.maxAge {
+      if (options.maxAge) {
         cookie += `; Max-Age=${options.maxAge}`
       }
-      if options.expires {
+      if (options.expires) {
         cookie += `; Expires=${options.expires.toUTCString()}`
       }
       if options.domain {
