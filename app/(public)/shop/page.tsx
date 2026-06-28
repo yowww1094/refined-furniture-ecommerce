@@ -6,6 +6,7 @@ import { ProductCard } from '@/components/shared/ProductCard';
 import { FilterBar } from '@/components/shop/FilterBar';
 import { SortSelect } from '@/components/shop/SortSelect';
 import { Image } from 'next/image';
+import { generateMetadata } from '@/lib/utils/generate-metadata';
 
 interface Product {
   id: string;
@@ -15,6 +16,11 @@ interface Product {
   image_url: string;
   // Add other fields as needed
 }
+
+export const metadata = {
+  title: 'Shop - Refined Furniture',
+  description: 'Browse our collection of handcrafted Moroccan furniture, from sofas and tables to beds and storage solutions.',
+};
 
 export default function ShopPage() {
   const searchParams = useSearchParams();
@@ -185,7 +191,7 @@ export default function ShopPage() {
                 className={`px-3 py-2 mr-0 ltr:rounded-r-l ltr:rounded-l-r disabled:opacity-50 ${
                   page === Math.ceil(totalCount / limit)
                     ? 'bg-muted'
-                    : 'border-input bg-white hover:bg-muted'
+                    : 'border-input bg-white hover:bg-md'
                 }`}
               >
                 <span className="sr-only">Next</span>

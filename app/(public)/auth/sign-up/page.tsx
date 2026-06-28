@@ -6,6 +6,13 @@ import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { SubmitButton } from '@/components/auth/SubmitButton';
 import { FieldError } from '@/components/auth/FieldError';
 import { useTranslations } from '@/lib/i18n';
+import { generateMetadata } from '@/lib/utils/generate-metadata';
+
+export const metadata = generateMetadata({
+  title: 'Sign Up - Refined Furniture',
+  description: 'Create your Refined Furniture account to shop handcrafted Moroccan furniture, track orders, and manage custom furniture requests.',
+  pathname: '/auth/sign-up',
+});
 
 export default function SignUpPage() {
   const { t } = useTranslations();
@@ -36,7 +43,7 @@ export default function SignUpPage() {
         {formState.success && (
           <Alert variant="default" className="w-full">
             <AlertTitle>{t('auth.success')}</AlertTitle>
-            <AlertDescription>{formState.success}</AlertDescription>
+            <AlertDescription>{formState.success}</blockquote>
           </Alert>
         )}
 

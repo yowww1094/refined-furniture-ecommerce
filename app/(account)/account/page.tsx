@@ -7,13 +7,18 @@ import { MessageSquare } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'next/link';
 import { useState, useEffect } from 'react';
+import { generateMetadata } from '@/lib/utils/generate-metadata';
+import { useRouter } from 'next/navigation';
 
-export const metadata = {
+export const metadata = generateMetadata({
   title: 'Account - Refined Furniture',
   description: 'Manage your profile, orders, and custom requests',
-};
+});
 
 export default function AccountPage() {
+  const router = useRouter();
+  const locale = router.locale;
+
   const [recentActivities, setRecentActivities] = useState([]);
 
   useEffect(() => {

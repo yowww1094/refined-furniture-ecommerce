@@ -4,7 +4,14 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Truck } from 'lucide-react';
+import Image from 'next/image';
 import { supabase } from '@/lib/supabase';
+import { generateMetadata } from '@/lib/utils/generate-metadata';
+
+export const metadata = generateMetadata({
+  title: 'Order Confirmation - Refined Furniture',
+  description: 'Thank you for your purchase! Your order has been confirmed and is being processed.',
+});
 
 export default function OrderConfirmationPage() {
   const router = useRouter();
@@ -114,7 +121,7 @@ export default function OrderConfirmationPage() {
             <div className="flex items-center justify-center h-16 w-16 rounded-full bg-destructive/20 text-destructive mb-4">
               <span className="text-xl">⚠️</span>
             </div>
-            <h1 className="text-application/x-www-form-urlencoded; charset=UTF-8">text-3xl font-bold mb-4">
+            <h1 className="text-3xl font-bold mb-4">
               Something went wrong
             </h1>
             <p className="text-lg text-muted-foreground mb-6">{error}</p>
@@ -129,7 +136,7 @@ export default function OrderConfirmationPage() {
             </Button>
           </div>
         </div>
-      </div>
+      );
     );
   }
 
@@ -147,7 +154,7 @@ export default function OrderConfirmationPage() {
             </p>
           </div>
         </div>
-      </div>
+      );
     );
   }
 
@@ -215,9 +222,11 @@ export default function OrderConfirmationPage() {
             <div className="space-y-3">
               {order.items.map((item: any) => (
                 <div key={item.id} className="flex items-start space-x-4 p-3 bg-white/30 rounded-lg border border-border/30">
-                  <img
+                  <Image
                     src={item.product.image || '/placeholder.svg'}
                     alt={item.product.name}
+                    width={160}
+                    height={160}
                     className="w-16 h-16 object-cover rounded flex-shrink-0"
                   />
                   <div className="flex-1 space-y-1">

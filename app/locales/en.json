@@ -1,0 +1,216 @@
+{
+  "hero": {
+    "title": "Handcrafted Moroccan Furniture",
+    "description": "Discover exquisite, custom-made furniture pieces that blend traditional Moroccan craftsmanship with contemporary design.",
+    "shopCollection": "Shop Collection",
+    "customOrders": "Custom Orders"
+  },
+  "features": {
+    "authenticCraftsmanship": {
+      "title": "Authentic Craftsmanship",
+      "description": "Each piece is handcrafted by skilled artisans using traditional Moroccan techniques passed down through generations."
+    },
+    "customDesign": {
+      "title": "Custom Design",
+      "description": "Work with our designers to create bespoke furniture pieces tailored to your exact specifications and space requirements."
+    },
+    "premiumMaterials": {
+      "title": "Premium Materials",
+      "description": "We source only the finest woods, fabrics, and materials to ensure lasting beauty and durability in every piece."
+    },
+    "exceptionalService": {
+      "title": "Exceptional Service",
+      "description": "From initial consultation to delivery and beyond, our dedicated team ensures a seamless experience every step of the way."
+    }
+  },
+  "cta": {
+    "title": "Ready to Transform Your Space?",
+    "description": "Explore our ready-made collections or start your custom furniture journey today.",
+    "exploreCollection": "Explore Collection",
+    "startProject": "Start a Project"
+  },
+  "shop": {
+    "filter": {
+      "category": "Category",
+      "allCategories": "All Categories",
+      "minPrice": "Min Price",
+      "maxPrice": "Max Price",
+      "placeholderMin": "Min",
+      "placeholderMax": "Max",
+      "applyFilters": "Apply Filters"
+    },
+    "sort": {
+      "sortBy": "Sort by",
+      "featured": "Featured",
+      "priceLowToHigh": "Price: Low to High",
+      "priceHighToLow": "Price: High to Low",
+      "nameAZ": "Name: A to Z",
+      "nameZA": "Name: Z to A"
+    }
+  },
+  "product": {
+    "availability": {
+      "inStock": "In Stock",
+      "outOfStock": "Out of Stock"
+    },
+    "quantity": "Quantity",
+    "addToCart": "Add to Cart",
+    "buyNow": "Buy Now",
+    "wishlist": "Wishlist",
+    "whatsappInquiry": "WhatsApp Inquiry",
+    "customizeDesign": "Customize this Design",
+    "specifications": "Specifications",
+    "materials": "Materials",
+    "dimensions": "Dimensions",
+    "reviews": "Reviews",
+    "relatedProducts": "You Might Also Like"
+  },
+  "cart": {
+    "title": "Your Shopping Cart",
+    "empty": "Your cart is empty",
+    "subtotal": "Subtotal",
+    "proceedToCheckout": "Proceed to Checkout",
+    "continueShopping": "Continue Shopping"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "customerInfo": "Customer Information",
+    "fullName": "Full Name",
+    "phone": "Phone Number",
+    "email": "Email Address",
+    "address": "Delivery Address",
+    "city": "City",
+    "notes": "Order Notes",
+    "codNotice": "Cash on Delivery Available",
+    "orderSummary": "Order Summary",
+    "placeOrder": "Place Order"
+  },
+  "orderConfirmation": {
+    "title": "Order Confirmation",
+    "thankYou": "Thank you for your order!",
+    "orderNumber": "Order Number",
+    "orderDetails": "Order Details",
+    "contactUs": "Contact us via WhatsApp for any questions",
+    "trackOrder": "Track Your Order",
+    "shopMore": "Shop More"
+  },
+  "customFurniture": {
+    "title": "Custom Furniture Atelier",
+    "subtitle": "Bring your vision to life with our bespoke furniture service",
+    "description": "Our expert artisans will work with you to create unique, handcrafted pieces that perfectly match your style and space requirements.",
+    "getStarted": "Get Started",
+    "howItWorks": "How It Works",
+    "consultation": "Design Consultation",
+    "design": "Custom Design",
+    "craftsmanship": "Expert Craftsmanship",
+    "delivery": "Delivery & Setup",
+    "requestForm": {
+      "title": "Submit Your Custom Request",
+      "furnitureType": "Furniture Type",
+      "dimensions": "Dimensions (L x W x H in cm)",
+      "materialPreference": "Material Preference",
+      "budget": "Budget Range (MAD)",
+      "description": "Description of Your Vision",
+      "inspiration": "Pinterest/Instagram References (URLs)",
+      "uploadFiles": "Upload Images or Files",
+      "fileLabel": "Choose files or drag and drop here",
+      "fileHint": "Images, sketches, or reference files (max 10MB each)",
+      "submitRequest": "Submit Request",
+      "required": "* Required field"
+    }
+  },
+  "account": {
+    "overview": "Account Overview",
+    "orders": "My Orders",
+    "customRequests": "Custom Requests",
+    "wishlist": "Wishlist",
+    "profile": "Profile",
+    "addresses": "Addresses",
+    "notifications": "Notifications",
+    "signOut": "Sign Out"
+  },
+  "orders": {
+    "title": "My Orders",
+    "empty": "You haven't placed any orders yet",
+    "orderDate": "Order Date",
+    "status": "Status",
+    "total": "Total",
+    "viewDetails": "View Details",
+    "noResults": "No orders found matching your criteria"
+  },
+  "customRequests": {
+    "title": "My Custom Requests",
+    "empty": "You haven't submitted any custom requests yet",
+    "status": "Status",
+    "submitted": "Submitted",
+    "viewDetails": "View Details",
+    "noResults": "No requests found matching your criteria"
+  },
+  "profile": {
+    "title": "Profile Information",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "saveChanges": "Save Changes",
+    "success": "Profile updated successfully"
+  },
+  "addresses": {
+    "title": "Manage Addresses",
+    "empty": "You haven't saved any addresses yet",
+    "addNew": "Add New Address",
+    "name": "Address Name (e.g., Home, Office)",
+    "street": "Street Address",
+    "city": "City",
+    "postalCode": "Postal Code",
+    "country": "Country",
+    "default": "Set as default address",
+    "save": "Save Address"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "empty": "You have no notifications",
+    "markAllRead": "Mark all as read",
+    "preferences": "Notification Preferences",
+    "emailNotifications": "Email notifications",
+    "smsNotifications": "SMS notifications"
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "orders": "Orders",
+    "products": "Products",
+    "categories": "Categories",
+    "materials": "Materials",
+    "suppliers": "Suppliers",
+    "customRequests": "Custom Requests",
+    "customers": "Customers",
+    "projects": "Projects",
+    "content": "Content",
+    "analytics": "Analytics",
+    "settings": "Settings",
+    "notifications": "Notifications"
+  },
+  "common": {
+    "search": "Search",
+    "loading": "Loading...",
+    "noResults": "No results found",
+    "seeAll": "See all",
+    "prev": "Previous",
+    "next": "Next",
+    "close": "Close",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "faq": "Frequently Asked Questions",
+    "whatsApp": "Contact us on WhatsApp",
+    "followUs": "Follow us on",
+    "rightsReserved": "All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  }
+}

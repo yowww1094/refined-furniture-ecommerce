@@ -1,0 +1,216 @@
+{
+  "hero": {
+    "title": "أثاث مغربي مصنوع يدويًا",
+    "description": "اكتشف قطع الأثاث المصنوعة حسب الطلب بمهارة فائقة والتي تجمع بين الحرفية المغربية التقليدية والتصميم المعاصر.",
+    "shopCollection": "عرض المجموعة",
+    "customOrders": "الطلبات المخصصة"
+  },
+  "features": {
+    "authenticCraftsmanship": {
+      "title": "الحرفية الأصيلة",
+      "description": "كل قطعة مصنوعة يدويًا من قبل حرفيين مهرة باستخدام تقنيات مغربية تقليدية تم передачها من جيل إلى جيل."
+    },
+    "customDesign": {
+      "title": "التصميم المخصص",
+      "description": "اعمل مع مصممينا لإنشاء قطع أثاث مصممة خصيصًا وفقًا لمواصفاتك واحتياجات مساحاتك بالضبط."
+    },
+    "premiumMaterials": {
+      "title": "المواد المتميزة",
+      "description": "نستخدم فقط أفضل الأخشاب والأقمشة والمواد لضمان الجمال والمتانة الدائمة في كل قطعة."
+    },
+    "exceptionalService": {
+      "title": "الخدمة الاستثنائية",
+      "description": "من الاستشارة الأولية إلى التسليم وما بعده، يضمن فريقنا المخصص تجربة سلسة في كل خطوة."
+    }
+  },
+  "cta": {
+    "title": "هل أنت جاهز لتحويل مساحتك؟",
+    "description": "استكشف مجموعاتنا الجاهزة للشراء أو ابدأ رحلتك اليوم نحو الأثاث المخصص.",
+    "exploreCollection": "استكشف المجموعة",
+    "startProject": "ابدأ المشروع"
+  },
+  "shop": {
+    "filter": {
+      "category": "القسم",
+      "allCategories": "كل الأقسام",
+      "minPrice": "الحد الأدنى للسعر",
+      "maxPrice": "الحد الأقصى للسعر",
+      "placeholderMin": "الحد الأدنى",
+      "placeholderMax": "الحد الأقصى",
+      "applyFilters": "تطبيق الفلاتر"
+    },
+    "sort": {
+      "sortBy": "ترتيب حسب",
+      "featured": "مميز",
+      "priceLowToHigh": "السعر: من الأقل إلى الأعلى",
+      "priceHighToLow": "السعر: من الأعلى إلى الأقل",
+      "nameAZ": "الاسم: من أ إلى ي",
+      "nameZA": "الاسم: من ي إلى أ"
+    }
+  },
+  "product": {
+    "availability": {
+      "inStock": "متوفر في المخزن",
+      "outOfStock": "غير متوفر في المخزن"
+    },
+    "quantity": "الكمية",
+    "addToCart": "إضافة إلى السلة",
+    "buyNow": "اشتري الآن",
+    "wishlist": "قائمة الأمنيات",
+    "whatsappInquiry": "استفسار عبر الواتساب",
+    "customizeDesign": "خصّص هذا التصميم",
+    "specifications": "المواصفات",
+    "materials": "المواد",
+    "dimensions": "الأبعاد",
+    "reviews": "التعليقات",
+    "relatedProducts": "قد تُحب أيضًا"
+  },
+  "cart": {
+    "title": "عربة التسوق الخاصة بك",
+    "empty": "عربة التسوق الخاصة بك فارغة",
+    "subtotal": "المجموع الفرعي",
+    "proceedToCheckout": "المتابعة للدفع",
+    "continueShopping": "المتابعة للتسوق"
+  },
+  "checkout": {
+    "title": "الدفع",
+    "customerInfo": "معلومات العميل",
+    "fullName": "الاسم الكامل",
+    "phone": "رقم الهاتف",
+    "email": "عنوان البريد الإلكتروني",
+    "address": "عنوان التوصيل",
+    "city": "المدينة",
+    "notes": "ملاحظات الطلب",
+    "codNotice": "الدفع عند التسليم متاح",
+    "orderSummary": "ملخص الطلب",
+    "placeOrder": "أرسل الطلب"
+  },
+  "orderConfirmation": {
+    "title": "تأكيد الطلب",
+    "thankYou": "شكرًا لطلبك!",
+    "orderNumber": "رقم الطلب",
+    "orderDetails": "تفاصيل الطلب",
+    "contactUs": "تواصل معنا عبر الواتساب لأي أسئلة",
+    "trackOrder": "تتبع طلبك",
+    "shopMore": "تسوق المزيد"
+  },
+  "customFurniture": {
+    "title": "ورشة الأثاث المخصص",
+    "subtitle": "حقق رؤيتك من خلال خدمة الأثاث المخصص لدينا",
+    "description": "سيعمل الحرفيون خبراؤنا معك لإنشاء قطع فريدة ومصنوعة يدويًا تناسب أسلوبك واحتياجات مساحتك تمامًا.",
+    "getStarted": "ابدأ الآن",
+    "howItWorks": "كيف يعمل ذلك",
+    "consultation": "استشارة التصميم",
+    "design": "التصميم المخصص",
+    "craftsmanship": "الحرفية الخبيرة",
+    "delivery": "التسليم والتركيب",
+    "requestForm": {
+      "title": "قدم طلبك المخصص",
+      "furnitureType": "نوع الأثاث",
+      "dimensions": "الأبعاد (الطول × العرض × الارتفاع بالسنتيمتر)",
+      "materialPreference": "تفضيل المادة",
+      "budget": "الميزانية (درهم مغربي)",
+      "description": "وصف رؤيتك",
+      "inspiration": "مراجع بينتيريست/إنستغرام (روابط)",
+      "uploadFiles": "حمل صور أو ملفات",
+      "fileLabel": "اختر الملفات أو اسحبها وافلتوها هنا",
+      "fileHint": "صور، رسوم توضيحية، أو ملفات reference (حد أقصى 10 ميجابايت لكل ملف)",
+      "submitRequest": "قدم الطلب",
+      "required": "* حقل مطلوب"
+    }
+  },
+  "account": {
+    "overview": "نظرة عامة على الحساب",
+    "orders": "طلباتي",
+    "customRequests": "طلباتي المخصصة",
+    "wishlist": "قائمة الأمنيات",
+    "profile": "الملف الشخصي",
+    "addresses": "العناوين",
+    "notifications": "الإشعارات",
+    "signOut": "تسجيل الخروج"
+  },
+  "orders": {
+    "title": "طلباتي",
+    "empty": "لم تقم بإرسال أي طلبات بعد",
+    "orderDate": "تاريخ الطلب",
+    "status": "الحالة",
+    "total": "الإجمالي",
+    "viewDetails": "عرض التفاصيل",
+    "noResults": "لم يتم العثور على طلبات تطابق معاييرك"
+  },
+  "customRequests": {
+    "title": "طلباتي المخصصة",
+    "empty": "لم تقم بإرسال أي طلبات مخصصة بعد",
+    "status": "الحالة",
+    "submitted": "تم الإرسال",
+    "viewDetails": "عرض التفاصيل",
+    "noResults": "لم يتم العثور على طلبات تطابق معاييرك"
+  },
+  "profile": {
+    "title": "معلومات الملف الشخصي",
+    "firstName": "الاسم الأول",
+    "lastName": "اسم العائلة",
+    "email": "عنوان البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "saveChanges": "حفظ التغييرات",
+    "success": "تم تحديث الملف الشخصي بنجاح"
+  },
+  "addresses": {
+    "title": "إدارة العناوين",
+    "empty": "لم تقم بحفظ أي عناوين بعد",
+    "addNew": "إضافة عنوان جديد",
+    "name": "اسم العنوان (مثل: المنزل، المكتب)",
+    "street": "عنوان الشارع",
+    "city": "المدينة",
+    "postalCode": "الرمز البريدي",
+    "country": "البلد",
+    "default": "تعيين كافتراضي",
+    "save": "حفظ العنوان"
+  },
+  "notifications": {
+    "title": "الإشعارات",
+    "empty": "ليس لديك أي إشعارات",
+    "markAllRead": "علّم الكل كمقروء",
+    "preferences": "تفضيلات الإشعارات",
+    "emailNotifications": "إشعارات عبر البريد الإلكتروني",
+    "smsNotifications": "إشعارات عبر الرسائل النصية"
+  },
+  "admin": {
+    "dashboard": "لوحة القيادة",
+    "orders": "الطلبات",
+    "products": "المنتجات",
+    "categories": "الأقسام",
+    "materials": "المواد",
+    "suppliers": "الموردين",
+    "customRequests": "الطلبات المخصصة",
+    "customers": "العملاء",
+    "projects": "المشاريع",
+    "content": "المحتوى",
+    "analytics": "التحليلات",
+    "settings": "الإعدادات",
+    "notifications": "الإشعارات"
+  },
+  "common": {
+    "search": "بحث",
+    "loading": "جارٍ التحميل...",
+    "noResults": "لا توجد نتائج",
+    "seeAll": "اظهر الكل",
+    "prev": "السابق",
+    "next": "التالي",
+    "close": "إغلاق",
+    "submit": "إرسال",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "view": "عرض",
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "contact": "اتصل بنا",
+    "faq": "الأسئلة الشائعة",
+    "whatsApp": "تواصل معنا عبر الواتساب",
+    "followUs": "تابعونا على",
+    "rightsReserved": "جميع الحقوق محفوظة.",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsOfService": "شروط الخدمة"
+  }
+}

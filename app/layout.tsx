@@ -1,59 +1,34 @@
-'use client';
-
 import type { Metadata } from 'next';
-import { useEffect } from 'react';
-import { useRef } from 'react';
-import { Manrope } from 'next/font/google';
-import { NotoSansArabic } from 'next/font/google';
-import './globals.css';
-import { CartDrawer } from '@/components/cart/CartDrawer';
-import { useUIStore } from '@/stores/ui';
-import { usePathname, useRouter } from 'next/navigation';
-
-const manrope = Manrope({
-  subsets: ['latin'],
-  variable: '--font-manrope',
-  display: 'swap',
-});
-
-const notoSansArabic = NotoSansArabic({
-  subsets: ['arabic'],
-  weight: ['400', '500', '600'],
-  variable: '--font-noto-arabic',
-  display: 'swap',
-});
+import ClientLayout from './client-layout';
 
 export const metadata: Metadata = {
   title: 'Refined Furniture',
   description: 'Premium Moroccan Furniture — handcrafted elegance for your home',
+  // Add basic Open Graph tags for social sharing
+  openGraph: {
+    title: 'Refined Furniture',
+    description: 'Premium Moroccan Furniture — handcrafted elegance for your home',
+    url: 'https://refinedfurniture.ma',
+    siteName: 'Refined Furniture',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Refined Furniture',
+    description: 'Premium Moroccan Furniture — handcrafted elegance for your home',
+  },
+  // Add theme color for mobile browsers
+  themeColor: '#6B4F3A', // Primary brand color
 };
 
 export default function RootLayout({
-  children,
+  children, // This parameter is actually not used since we're wrapping children in ClientLayout
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const { cartDrawerOpen, openCartDrawer, closeCartDrawer } = useUIStore();
-  const pathname = usePathname();
-  const { locale } = useRouter();
-
-  // Determine text direction based on locale
-  const isRTL = locale === 'ar';
-
   return (
-    <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'} className={`${manrope.variable} ${notoSansArabic.variable}`}>
+    <html lang="en" dir="ltr">
       <body className="font-sans bg-background text-foreground antialiased">
-        {children}
-        <CartDrawer
-          open={cartDrawerOpen}
-          onOpenChange={(open) => {
-            if (open) {
-              openCartDrawer();
-            } else {
-              closeCartDrawer();
-            }
-          }}
-        />
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );

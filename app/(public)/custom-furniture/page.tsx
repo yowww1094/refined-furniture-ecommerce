@@ -2,9 +2,24 @@ import Link from 'next/link';
 import { HeroSection } from '@/components/home/HeroSection';
 import { Features } from '@/components/home/Features';
 import { CTA } from '@/components/home/CTA';
+import { generateMetadata } from '@/lib/utils/generate-metadata';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { breadcrumbSchema } from '@/lib/utils/structured-data';
+
+export const metadata = generateMetadata({
+  title: 'Custom Furniture Atelier - Refined Furniture',
+  description: 'Bring your unique vision to life with our custom Moroccan furniture service. Work with master craftsmen to create bespoke pieces tailored to your space.',
+});
 
 export default function CustomFurniturePage() {
   return (
+    <>
+      <JsonLd
+        schema={breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Custom Furniture', href: '/custom-furniture' },
+        ])}
+      />
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <HeroSection
@@ -176,5 +191,6 @@ export default function CustomFurniturePage() {
         buttonHref="/custom-furniture/request"
       />
     </div>
+    </>
   );
 }

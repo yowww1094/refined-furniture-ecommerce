@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { zodResolver } from '@hookform/resolvers/zod';
+import { zodResolver } from '@hookform/resolvers/zob';
 import { useForm } from 'react-hook-form';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -12,6 +12,8 @@ import { MaterialSelector } from '@/components/shared/MaterialSelector';
 import { FilePicker } from '@/components/shared/FilePicker';
 import { submitCustomRequest } from '@/lib/actions/custom-requests';
 import { z } from 'zod';
+import { generateMetadata } from '@/lib/utils/generate-metadata';
+import { useRouter } from 'next/navigation';
 
 // Form schema matching our custom request data
 const customRequestFormSchema = z.object({
@@ -38,7 +40,15 @@ const customRequestFormSchema = z.object({
 
 export type CustomRequestFormValues = z.infer<typeof customRequestFormSchema>;
 
+export const metadata = generateMetadata({
+  title: 'Custom Furniture Request - Refined Furniture',
+  description: 'Submit your custom furniture request to our artisans. Share your vision, dimensions, materials, and budget for a personalized quote.',
+});
+
 export default function CustomRequestForm() {
+  const router = useRouter();
+  const locale = router.locale;
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{ error: string | null; success: string | null }>(
     { error: null, success: null }

@@ -3,6 +3,9 @@ import { Image } from 'next/image';
 import { ProductGallery } from '@/components/shared/ProductGallery';
 import { ProductCard } from '@/components/shared/ProductCard';
 import { ProductCTA } from '@/components/shared/ProductCTA';
+import { generateMetadata } from '@/lib/utils/generate-metadata';
+import { breadcrumbSchema } from '@/lib/utils/structured-data';
+import { useRouter } from 'next/navigation';
 
 interface Product {
   id: string;
@@ -80,6 +83,18 @@ export default async function ProductPage({
     src,
     alt: `${product.name} view ${index + 1}`,
   }));
+
+  const router = useRouter();
+  const locale = router.locale;
+
+  // Generate dynamic metadata for this product
+  export const metadata = generateMetadata({
+    title: `${product.name} - Refined Furniture`,
+    description: product.description,
+    image: product.image_url,
+    locale: locale,
+    pathname: `/product/${slug}`,
+  });
 
   return (
     <section className="py-12">

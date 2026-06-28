@@ -1,0 +1,216 @@
+{
+  "hero": {
+    "title": "Mobilier Marocain Fait Main",
+    "description": "Découvrez des pièces de mobilier sur mesure exquises qui allient l'artisanat marocain traditionnel au design contemporain.",
+    "shopCollection": "Voir la Collection",
+    "customOrders": "Commandes Personnalisées"
+  },
+  "features": {
+    "authenticCraftsmanship": {
+      "title": "Artisanat Authentique",
+      "description": "Chaque pièce est fabriquée à la main par des artisans qualifiés utilisant des techniques marocaines traditionnelles transmises de génération en génération."
+    },
+    "customDesign": {
+      "title": "Design Personnalisé",
+      "description": "Travaillez avec nos designers pour créer des pièces de mobilier sur mesure adaptées exactement à vos spécifications et à vos besoins d'espace."
+    },
+    "premiumMaterials": {
+      "title": "Matériaux Premium",
+      "description": "Nous ne utilisons que les meilleurs bois, tissus et matériaux pour assurer beauté durable et durabilité dans chaque pièce."
+    },
+    "exceptionalService": {
+      "title": "Service Exceptionnel",
+      "description": "De la consultation initiale à la livraison et au-delà, notre équipe dédiée assure une expérience transparente à chaque étape."
+    }
+  },
+  "cta": {
+    "title": "Prêt à Transformer Votre Espace ?",
+    "description": "Explorez nos collections prêtes à l'emploi ou commencez dès aujourd'hui votre voyage vers du mobilier sur mesure.",
+    "exploreCollection": "Explorer la Collection",
+    "startProject": "Commencer un Projet"
+  },
+  "shop": {
+    "filter": {
+      "category": "Catégorie",
+      "allCategories": "Toutes les Catégories",
+      "minPrice": "Prix Min",
+      "maxPrice": "Prix Max",
+      "placeholderMin": "Min",
+      "placeholderMax": "Max",
+      "applyFilters": "Appliquer les Filtres"
+    },
+    "sort": {
+      "sortBy": "Trier par",
+      "featured": "En Vedette",
+      "priceLowToHigh": "Prix: Du Plus Bas au Plus Haut",
+      "priceHighToLow": "Prix: Du Plus Haut au Plus Bas",
+      "nameAZ": "Nom: A à Z",
+      "nameZA": "Nom: Z à A"
+    }
+  },
+  "product": {
+    "availability": {
+      "inStock": "En Stock",
+      "outOfStock": "Épuisé"
+    },
+    "quantity": "Quantité",
+    "addToCart": "Ajouter au Panier",
+    "buyNow": "Acheter Maintenant",
+    "wishlist": "Liste de Souhaits",
+    "whatsappInquiry": "Demande WhatsApp",
+    "customizeDesign": "Personnalisez ce Design",
+    "specifications": "Spécifications",
+    "materials": "Matériaux",
+    "dimensions": "Dimensions",
+    "reviews": "Avis",
+    "relatedProducts": "Vous Pourriez Aussi Aimer"
+  },
+  "cart": {
+    "title": "Votre Panier",
+    "empty": "Votre panier est vide",
+    "subtotal": "Sous-total",
+    "proceedToCheckout": "Passer à la Caisse",
+    "continueShopping": "Continuer les Achats"
+  },
+  "checkout": {
+    "title": "Caisse",
+    "customerInfo": "Informations Client",
+    "fullName": "Nom Complet",
+    "phone": "Numéro de Téléphone",
+    "email": "Adresse Email",
+    "address": "Adresse de Livraison",
+    "city": "Ville",
+    "notes": "Notes de Commande",
+    "codNotice": "Paiement à la Livraison Disponible",
+    "orderSummary": "Résumé de la Commande",
+    "placeOrder": "Passer la Commande"
+  },
+  "orderConfirmation": {
+    "title": "Confirmation de Commande",
+    "thankYou": "Merci pour votre commande !",
+    "orderNumber": "Numéro de Commande",
+    "orderDetails": "Détails de la Commande",
+    "contactUs": "Contactez-nous via WhatsApp pour toute question",
+    "trackOrder": "Suivre Votre Commande",
+    "shopMore": "Acheter Plus"
+  },
+  "customFurniture": {
+    "title": "Atelier de Mobilier Sur Mesure",
+    "subtitle": "Réalisez votre vision avec notre service de mobilier personnalisé",
+    "description": "Nos artisans experts travailleront avec vous pour créer des pièces uniques, fabriquées à la main, qui correspondent parfaitement à votre style et à vos besoins d'espace.",
+    "getStarted": "Commencer",
+    "howItWorks": "Comment Ça Marche",
+    "consultation": "Consultation de Design",
+    "design": "Design Personnalisé",
+    "craftsmanship": "Artisanat Expert",
+    "delivery": "Livraison & Installation",
+    "requestForm": {
+      "title": "Soumettez Votre Demande Personnalisée",
+      "furnitureType": "Type de Mobilier",
+      "dimensions": "Dimensions (L x l x H en cm)",
+      "materialPreference": "Préférence de Matériau",
+      "budget": "Budget (MAD)",
+      "description": "Description de Votre Vision",
+      "inspiration": "Références Pinterest/Instagram (URLs)",
+      "uploadFiles": "Téléverser des Images ou des Fichiers",
+      "fileLabel": "Choisissez des fichiers ou faites glisser-déposer ici",
+      "fileHint": "Images, croquis ou fichiers de référence (max 10Mo chacun)",
+      "submitRequest": "Soumettre la Demande",
+      "required": "* Champ requis"
+    }
+  },
+  "account": {
+    "overview": "Vue d'ensemble du compte",
+    "orders": "Mes Commandes",
+    "customRequests": "Mes Demandes Personnalisées",
+    "wishlist": "Liste de Souhaits",
+    "profile": "Profil",
+    "addresses": "Adresses",
+    "notifications": "Notifications",
+    "signOut": "Se Déconnecter"
+  },
+  "orders": {
+    "title": "Mes Commandes",
+    "empty": "Vous n'avez pas encore passé de commande",
+    "orderDate": "Date de Commande",
+    "status": "Statut",
+    "total": "Total",
+    "viewDetails": "Voir les Détails",
+    "noResults": "Aucune commande trouvée correspondant à vos critères"
+  },
+  "customRequests": {
+    "title": "Mes Demandes Personnalisées",
+    "empty": "Vous n'avez pas encore soumis de demandes personnalisées",
+    "status": "Statut",
+    "submitted": "Soumis",
+    "viewDetails": "Voir les Détails",
+    "noResults": "Aucune demande trouvée correspondant à vos critères"
+  },
+  "profile": {
+    "title": "Informations de Profil",
+    "firstName": "Prénom",
+    "lastName": "Nom de Famille",
+    "email": "Adresse Email",
+    "phone": "Numéro de Téléphone",
+    "saveChanges": "Enregistrer les Modifications",
+    "success": "Profil mis à jour avec succès"
+  },
+  "addresses": {
+    "title": "Gérer les Adresses",
+    "empty": "Vous n'avez pas encore enregistré d'adresses",
+    "addNew": "Ajouter une Nouvelle Adresse",
+    "name": "Nom de l'Adresse (ex: Maison, Bureau)",
+    "street": "Adresse Rue",
+    "city": "Ville",
+    "postalCode": "Code Postal",
+    "country": "Pays",
+    "default": "Définir comme adresse par défaut",
+    "save": "Enregistrer l'Adresse"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "empty": "Vous n'avez aucune notification",
+    "markAllRead": "Marquer tout comme lu",
+    "preferences": "Préférences de Notification",
+    "emailNotifications": "Notifications par Email",
+    "smsNotifications": "Notifications par SMS"
+  },
+  "admin": {
+    "dashboard": "Tableau de Bord",
+    "orders": "Commandes",
+    "products": "Produits",
+    "categories": "Catégories",
+    "materials": "Matériaux",
+    "suppliers": "Fournisseurs",
+    "customRequests": "Demandes Personnalisées",
+    "customers": "Clients",
+    "projects": "Projets",
+    "content": "Contenu",
+    "analytics": "Analyse",
+    "settings": "Paramètres",
+    "notifications": "Notifications"
+  },
+  "common": {
+    "search": "Recherche",
+    "loading": "Chargement...",
+    "noResults": "Aucun résultat trouvé",
+    "seeAll": "Voir Tout",
+    "prev": "Précédent",
+    "next": "Suivant",
+    "close": "Fermer",
+    "submit": "Soumettre",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "view": "Voir",
+    "home": "Accueil",
+    "about": "À Propos",
+    "contact": "Contact",
+    "faq": "Questions Fréquemment Posées",
+    "whatsApp": "Contactez-nous sur WhatsApp",
+    "followUs": "Suivez-nous sur",
+    "rightsReserved": "Tous droits réservés.",
+    "privacyPolicy": "Politique de Confidentialité",
+    "termsOfService": "Conditions d'Utilisation"
+  }
+}

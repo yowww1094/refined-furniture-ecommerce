@@ -4,6 +4,12 @@ import { CartSummary } from '@/components/cart/CartSummary';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Truck } from 'lucide-react';
+import { generateMetadata } from '@/lib/utils/generate-metadata';
+
+export const metadata = generateMetadata({
+  title: 'Your Cart - Refined Furniture',
+  description: 'Review your handcrafted Moroccan furniture selection and proceed to checkout.',
+});
 
 export default function CartPage() {
   const { items, totalPrice, clearCart } = useCartStore();

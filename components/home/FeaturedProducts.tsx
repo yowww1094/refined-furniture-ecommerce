@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function FeaturedProducts() {
   // In a real app, this data would come from a database or CMS
@@ -43,9 +44,11 @@ export function FeaturedProducts() {
           {featuredProducts.map(product => (
             <Link key={product.id} href={`/product/${product.slug}`} className="group">
               <div className="aspect-w-4 aspect-h-3 w-full rounded-lg overflow-hidden group-hover:shadow-lg transition-shadow">
-                <img
+                <Image
                   src={product.image}
                   alt={product.name}
+                  width={800}
+                  height={600}
                   className="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
                 />
               </div>

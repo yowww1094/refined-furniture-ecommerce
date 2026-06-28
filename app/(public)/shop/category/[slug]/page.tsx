@@ -6,6 +6,7 @@ import { ProductCard } from '@/components/shared/ProductCard';
 import { FilterBar } from '@/components/shop/FilterBar';
 import { SortSelect } from '@/components/shop/SortSelect';
 import { Image } from 'next/image';
+import { generateMetadata } from '@/lib/utils/generate-metadata';
 
 interface Product {
   id: string;
@@ -18,6 +19,11 @@ interface Product {
 interface CategoryParams {
   slug: string;
 }
+
+export const metadata = generateMetadata({
+  title: 'Category - Refined Furniture',
+  description: 'Browse our collection of furniture by category.',
+});
 
 export default function CategoryPage({ params }: { params: CategoryParams }) {
   const { slug } = params;
@@ -251,7 +257,6 @@ export default function CategoryPage({ params }: { params: CategoryParams }) {
 // We'll create a simple SortSelect component for this page (could reuse the one from shop, but we'll make a small variant)
 function SelectSort() {
   const searchParams = useSearchParams();
-  const router = useRouter();
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [currentSort, setCurrentSort] = useState<string>(searchParams.get('sort') || 'featured');

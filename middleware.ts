@@ -1,14 +1,14 @@
 import { NextResponse } from 'next/server'
 import { NextRequest } from 'next/server'
 import { createMiddlewareClient } from '@/lib/supabase/middleware'
-import { createMiddleware } from 'next-intl/middleware'
+import nextIntlMiddleware from 'next-intl/middleware'
 
 // Define the locales and default locale (must match next-intl config)
 const locales = ['en', 'fr', 'ar']
 const defaultLocale = 'en'
 
 // Create the next-intl middleware instance
-const nextIntlMiddleware = createMiddleware({
+const nextIntlMiddlewareInstance = nextIntlMiddleware({
   locales,
   defaultLocale,
   localePrefix: 'as-needed'
@@ -120,7 +120,7 @@ export async function middleware(request: NextRequest) {
   }
 
   // For non-protected paths, run the next-intl middleware to handle localization
-  return nextIntlMiddleware(request)
+  return nextIntlMiddlewareInstance(request)
 }
 
 // Export the config to match next-intl's requirements

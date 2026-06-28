@@ -3,7 +3,11 @@
     "allow": [
       "Bash(pnpm *)",
       "Bash(node extract-design-tokens.js)",
-      "Bash(dir A:projectsFreelanceRefined *)"
+      "Bash(dir A:projectsFreelanceRefined *)",
+      "Bash(taskkill *)",
+      "Bash(cmd /c \"taskkill /F /IM node.exe >nul 2>&1\")",
+      "Bash(C:WindowsSystem32taskkill.exe *)",
+      "PowerShell(taskkill *)"
     ]
   }
 }

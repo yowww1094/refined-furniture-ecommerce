@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export function Testimonials() {
   // In a real app, this data would come from a database or CMS
   const testimonials = [
@@ -42,9 +44,11 @@ export function Testimonials() {
             <div key={testimonial.id} className="bg-white rounded-lg shadow-md p-6">
               <div className="flex items-start space-x-4 mb-4">
                 <div className="flex-shrink-0 h-10 w-10">
-                  <img
+                  <Image
                     src={testimonial.image}
                     alt={`Photo of ${testimonial.name}`}
+                    width={100}
+                    height={100}
                     className="h-full w-full rounded-full object-cover"
                   />
                 </div>

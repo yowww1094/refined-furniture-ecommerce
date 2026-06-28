@@ -37,19 +37,19 @@ export function createMiddlewareClient(
       if (options.expires) {
         cookie += `; Expires=${options.expires.toUTCString()}`
       }
-      if options.domain {
+      if (options.domain) {
         cookie += `; Domain=${options.domain}`
       }
-      if options.path {
+      if (options.path) {
         cookie += `; Path=${options.path}`
       }
-      if options.secure {
+      if (options.secure) {
         cookie += '; Secure'
       }
-      if options.httpOnly {
+      if (options.httpOnly) {
         cookie += '; HttpOnly'
       }
-      if options.sameSite {
+      if (options.sameSite) {
         cookie += `; SameSite=${options.sameSite}`
       }
 

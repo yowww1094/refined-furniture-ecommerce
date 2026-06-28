@@ -11,6 +11,9 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { z } from 'zod';
 import { submitCustomRequest } from '@/lib/actions/custom-requests';
 import { customRequestSchema } from '@/lib/validation/custom-request.schema';
+import { generateMetadata } from '@/lib/utils/generate-metadata';
+import { useRouter } from 'next/navigation';
+import { Upload } from 'lucide-react';
 
 // Custom form reference fields
 const referenceFormSchema = z.object({
@@ -52,7 +55,15 @@ const referenceFormSchema = z.object({
 
 export type ReferenceFormValues = z.infer<typeof referenceFormSchema>;
 
+export const metadata = generateMetadata({
+  title: 'Customize Design - Refined Furniture',
+  description: 'Customize any of our existing designs to perfectly match your space and preferences. Start with a template and make it uniquely yours.',
+});
+
 export default function CustomReferenceForm() {
+  const router = useRouter();
+  const locale = router.locale;
+
   const searchParams = useSearchParams();
   const referenceProductId = searchParams.get('productId') || '';
   const referenceProductName = decodeURIComponent(searchParams.get('productName') || '');
@@ -70,7 +81,7 @@ export default function CustomReferenceForm() {
     watch,
     setValue,
   } = useForm<ReferenceFormValues>({
-    resolver: zodReferenceFormSchema,
+    resolver: zodResolver(referenceFormSchema),
     defaultValues: {
       // Pre-fill with reference data if available
       referenceProductId,
@@ -232,7 +243,7 @@ export default function CustomReferenceForm() {
         <div className="grid gap-4 sm:grid-cols-3">
           <div className="space-y-2">
             <Label htmlFor="length">Length</Label>
-            <div className="flex items-center space-x-2">
+            <div className="func items-center space-x-2">
               <Input
                 id="length"
                 type="number"
@@ -370,6 +381,7 @@ export default function CustomReferenceForm() {
             <Checkbox
               id="material-stone"
               value="stone"
+              {/* Ignore the typo in the original - this was likely meant to be materials */}
               {...register('materials')}
             />
             <span className="text-sm">Stone / Marble</span>

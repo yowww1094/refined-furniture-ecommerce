@@ -1,4 +1,5 @@
 import { useFormState } from 'react-dom';
+import { useRouter } from 'next/navigation';
 import { requestPasswordReset } from '@/actions/auth';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -6,6 +7,13 @@ import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { SubmitButton } from '@/components/auth/SubmitButton';
 import { FieldError } from '@/components/auth/FieldError';
 import { useTranslations } from '@/lib/i18n';
+import { generateMetadata } from '@/lib/utils/generate-metadata';
+
+export const metadata = generateMetadata({
+  title: 'Forgot Password - Refined Furniture',
+  description: 'Reset your Refined Furniture account password. Enter your email to receive a secure password reset link.',
+  pathname: '/auth/forgot-password',
+});
 
 export default function ForgotPasswordPage() {
   const { t } = useTranslations();

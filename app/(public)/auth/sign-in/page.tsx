@@ -6,6 +6,13 @@ import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { SubmitButton } from '@/components/auth/SubmitButton';
 import { FieldError } from '@/components/auth/FieldError';
 import { useTranslations } from '@/lib/i18n';
+import { generateMetadata } from '@/lib/utils/generate-metadata';
+
+export const metadata = generateMetadata({
+  title: 'Sign In - Refined Furniture',
+  description: 'Sign in to your Refined Furniture account to access your orders, wishlist, custom requests, and profile.',
+  pathname: '/auth/sign-in',
+});
 
 export default function SignInPage() {
   const { t } = useTranslations();

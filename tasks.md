@@ -28,8 +28,6 @@
 - [x] P4.3 WhatsApp helper + WhatsAppButton + WhatsAppFloater
 - [x] P4.4 Home page (/) — hero + featured products + projects + testimonials
 - [x] P4.5 About + Contact pages (contact form → notifications)
-- P4.6 FAQ page + Search page (/) — hero + featured products + projects + testimonials
-- [x] P4.5 About + Contact pages (contact form → notifications)
 - [x] P4.6 FAQ page + Search page
 - [x] P4.7 404 + 500 styled error pages
 - [x] P4.8 Add layout‑specific sections (Hero, Features, CTA) to the home page
@@ -88,11 +86,11 @@
 - [x] P13.4 Tailwind legislative-property audit + RTL utilities
 - [x] P13.5 Forms localized — labels, placeholders, errors
 - [x] P13.6 Verify Arabic font pairing & RTL adjustments
-- [ ] P14.1 generateMetadata helpers applied to all public pages
-- [ ] P14.2 sitemap.ts — dynamic from products, projects, categories
-- [ ] P14.3 robots.ts
-- [ ] P14.4 JSON-LD — Product, BreadcrumbList, LocalBusiness, FAQ, Organization
-- [ ] P14.5 hreflang cluster + Core Web Vitals pass
+- [x] P14.1 generateMetadata helpers applied to all public pages
+- [x] P14.2 sitemap.ts — dynamic from products, projects, categories
+- [x] P14.3 robots.ts
+- [x] P14.4 JSON-LD — Product, BreadcrumbList, LocalBusiness, FAQ, Organization
+- [x] P14.5 hreflang cluster + Core Web Vitals pass
 - [ ] P15.1 Vercel project setup + production env vars
 - [ ] P15.2 Supponent production migrations + storage setup
 - [ ] P15.3 Pre-deploy security audit (RLS, no leaked keys, MIME limits)

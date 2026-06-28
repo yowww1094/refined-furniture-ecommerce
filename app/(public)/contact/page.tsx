@@ -1,6 +1,9 @@
 import { ContactForm } from '@/components/contact/ContactForm';
 import { ContactInfo } from '@/components/contact/ContactInfo';
 import { generateMetadata } from '@/lib/utils/generate-metadata';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { breadcrumbSchema } from '@/lib/utils/structured-data';
+import { useRouter } from 'next/navigation';
 
 export const metadata = generateMetadata({
   title: 'Contact Us - Refined Furniture',
@@ -8,12 +11,23 @@ export const metadata = generateMetadata({
 });
 
 export default function ContactPage() {
+  const router = useRouter();
+  const locale = router.locale;
+
   return (
-    <div className="space-y-12">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <ContactInfo />
-        <ContactForm />
-      </div>
-    </div>
+    <>
+      <JsonLd
+        schema={breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Contact', href: '/contact' },
+        ])}
+      />
+      <div className="space-y-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <ContactInfo />
+          <ContactForm />
+       </div>
+     </div>
+    </>
   );
 }
